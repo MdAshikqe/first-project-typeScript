@@ -5,6 +5,7 @@ import tseslint from 'typescript-eslint';
 export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
+
   {
     languageOptions: {
       globals: {
@@ -22,11 +23,12 @@ export default [
       'no-undef': 'error',
     },
   },
-  {
-    extends: [
-      'eslint:recommended',
-      'plugin:@typescript-eslint/recommended',
-      'prettier',
-    ],
-  },
+
+  // {
+  //   extends: [
+  //     'eslint:recommended',
+  //     'plugin:@typescript-eslint/recommended',
+  //     'prettier',
+  //   ],
+  // },
 ];
